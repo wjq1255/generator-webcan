@@ -16,7 +16,6 @@ module.exports = function(grunt){
     //执行任务
     grunt.registerTask('default', ['serve']);
     grunt.registerTask('serve', function() {
-        // grunt.task.run(['clean', 'jshint', 'uglify', copy', 'connect', 'open', 'watch']);
         grunt.task.run([ 'clean', 'copy', 'connect', 'open', 'watch']);
     });
 

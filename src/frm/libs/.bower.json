@@ -1,0 +1,12 @@
+{
+  "name": "loft-mobile",
+  "_release": "cb8c77cfda",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "cb8c77cfda910651ef951d8df9f104d7c307511b"
+  },
+  "_source": "http://172.16.128.161/loft/loft-mobile-dist.git",
+  "_target": "master",
+  "_originalSource": "http://172.16.128.161/loft/loft-mobile-dist.git"
+}

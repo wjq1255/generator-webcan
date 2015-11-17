@@ -4,16 +4,17 @@ requirejs.config({
         app: 'webcan'
     }
 });
-define(['text!webcan/demo/tpl/demo_tpl.html'], function(demoTpl) {
-    
-    this.templeate = _.template(demoTpl);
-    this.data = {
-        "name":"wujinqiang",
-        "age": "26",
-        "sex": 1
-    };
-    var that = this;
+define(['text!webcan/demo/tpl/demo_tpl.html', 'webcan/demo/js/data'], function(demoTpl,homeData) {
+    $(document).ready(function() {
+        this.templeate = _.template(demoTpl);
+        var that = this;
+        $.when(homeData.getUserData()).done(function(resp){
+            console.log(resp);
+            $("#baseInfo").html(that.templeate(resp));
+        }).fail(function(resp) {
+            console.log(resp);
+        });
 
-    $("#baseInfo").html(that.templeate(that.data))
+    });
  
 })

@@ -1,7 +1,8 @@
 {
   "name": "myapp",
   "version": "1.0.0",
-  "author": "wujinqiang1255@126.com",
+  "email": "wujinqiang1255@126.com",
+  "author": "Jerry",
   "dependencies": {},
   "devDependencies": {
     "bower": "^1.6.3",
