@@ -4,16 +4,19 @@ requirejs.config({
         app: 'webcan'
     }
 });
-define(['text!webcan/demo/tpl/demo_tpl.html', 'webcan/demo/js/data'], function(demoTpl,homeData) {
+define(['text!webcan/demo/tpl/demo_tpl.html', 'webcan/demo/js/adapter'], function(demoTpl,homeData) {
     $(document).ready(function() {
         this.templeate = _.template(demoTpl);
         var that = this;
-        $.when(homeData.getUserData()).done(function(resp){
-            console.log(resp);
-            $("#baseInfo").html(that.templeate(resp));
+        $.when(homeData.getUserData(), homeData.getBaseLinks()).done(function(userinfo, links){
+            var dataObj = {
+                "userinfo": userinfo,
+                "links": links
+            };
+            $("#baseInfo").html(that.templeate(dataObj));
         }).fail(function(resp) {
-            console.log(resp);
-        });
+            console.log("resp =" + resp);
+        }); 
 
     });
  

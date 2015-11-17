@@ -1,9 +1,17 @@
 <div>
-    <p>姓名：<%= name %></p>
-    <p>年龄：<%= age %></p>
-    <p>性别：<%= sex==1? "男" :"女" %></p>
+	<img class = "logo" src="frm/static/images/yeoman.png">
 </div>
 <hr/>
 <div>
-	<img class = "logo" src="frm/static/images/yeoman.png">
+    <p>姓名：<%= userinfo.name %></p>
+    <p>年龄：<%= userinfo.age %></p>
+    <p>性别：<%= userinfo.sex==1? "男" :"女" %></p>
 </div>
+<div>
+	<ul class="link">
+		<% _.each(links, function(item,index) { %>
+		<li><a href="<%= item.url %>" target="_bank" ><%= item.name %></a></li>
+		<% }) %>
+	</ul>
+</div>
+
