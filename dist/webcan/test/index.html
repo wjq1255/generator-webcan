@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>demo</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="description" content="">
+    <base href="/">
+    <link href="frm/loft-mobile/dist/css/loft-mobile-default.min.css" rel="stylesheet">
+    <link href="frm/static/css/main.css" rel="stylesheet">
+    <script type="text/javascript" src="frm/loft-mobile/dist/js/loft-mobile-all.js"></script>
+</head>
+
+<body>
+    <div id="baseInfo">
+    </div>
+    <!-- build:js scripts/main.js -->
+    <script data-main="webcan/demo/js/page" defer="defer" src="frm/loft-mobile/dist/js/loft-mobile-require.min.js"></script>
+    <!-- endbuild -->
+</body>
+
+</html>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>demo</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="description" content="">
+    <base href="/">
+    <link href="frm/loft-mobile/dist/css/loft-mobile-default.min.css" rel="stylesheet">
+    <link href="frm/static/css/main.css" rel="stylesheet">
+    <script type="text/javascript" src="frm/loft-mobile/dist/js/loft-mobile-all.js"></script>
+    <style type="text/css">
+        .btn{width: 90%;
+            background-color: antiquewhite;
+            border: 1px solid #ccf;
+            margin: 10px 0;}
+        .errmeg {
+            background-color: #F8D698;
+            width: 90%;
+            margin: 5px auto;
+            color: red;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <fieldset>
+            <legend>验证码</legend>
+            <input type="text" id="checkCode" placeholder="请填写验证码">
+            <input type="button" id="checkCodeBtn" value="发送验证码">
+            <br>
+            <div class="errmeg"></div>
+            <button class="btn" id="submit-btn">提交</button>
+            <button class="btn" id="clear">清除</button>
+        </fieldset>
+        <fieldset>
+            <legend>触发执行</legend>
+            <button class="btn" id="oneBtn">点击</button>
+        </fieldset>
+        
+        
+        
+    </div>
+    <!-- build:js scripts/main.js -->
+    <script data-main="webcan/test/js/page" defer="defer" src="frm/loft-mobile/dist/js/loft-mobile-require.min.js"></script>
+    <!-- endbuild -->
+</body>
+
+</html>
+
