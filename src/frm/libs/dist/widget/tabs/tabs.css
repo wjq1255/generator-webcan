@@ -1,0 +1,98 @@
+/**
+         * loft-mobile v1.0.1
+         *
+         * Copyright By Linkage Technology Co.,Ltd. All rights reserved.2014-2015.
+         * All rights reserved.
+         *
+         * This source code is licensed under the LGPLV3-style license found in the
+         * LICENSE file in the root directory of this source tree. 
+         *
+         */
+.ui-tabs-nav {
+  display: -webkit-box;
+  width: 100%;
+}
+.ui-tabs-nav li {
+  border: solid #d4d4d4;
+  border-width: 1px 0 1px 1px;
+  -webkit-box-flex: 1;
+  text-align: center;
+  color: #4a4a4a;
+  font-size: 16px;
+  background-color: #fff;
+  height: 42px;
+  line-height: 42px;
+  white-space: nowrap;
+  /*内容不换行*/
+  cursor: pointer;
+}
+.ui-tabs-nav li a {
+  text-decoration: none;
+  color: #4a4a4a;
+}
+.ui-tabs-nav li:last-child {
+  border-width: 1px;
+}
+.ui-tabs-nav li.ui-state-active {
+  background-color: #fff;
+  border-bottom: 2px solid #f13f2f;
+}
+.ui-tabs-nav li.ui-state-active a {
+  color: #f13f2f;
+}
+.ui-tabs-content {
+  border: solid #d4d4d4;
+  border-width: 0 1px 1px;
+}
+.ui-tabs-content .ui-tabs-panel {
+  padding: 1em;
+}
+.ui-tabs-panel .ui-loading {
+  position: absolute;
+  left: 50%;
+  top: 50px;
+  margin-top: -20px;
+  margin-left: -20px;
+}
+.ui-tabs-panel .ui-load-error {
+  color: red;
+  text-align: center;
+}
+.ui-tabs {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.ui-tabs-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  z-index: 11;
+  position: relative;
+}
+.ui-tabs-content {
+  position: relative;
+  min-height: 100px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  overflow: hidden;
+  -webkit-transition: height 200ms ease-in-out;
+}
+.ui-tabs-content .ui-tabs-panel {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  min-height: 100px;
+}
+.ui-tabs-panel {
+  -webkit-transform: translateZ(0);
+}
+.ui-tabs-content .ui-tabs-panel.ui-state-active,
+.ui-viewport-transitioning .ui-tabs-panel.out {
+  display: block;
+  z-index: 1;
+}
+.ui-tabs-content .ui-tabs-panel.ui-state-active {
+  z-index: 2;
+}

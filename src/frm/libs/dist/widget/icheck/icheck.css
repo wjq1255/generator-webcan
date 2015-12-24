@@ -1,0 +1,99 @@
+/**
+         * loft-mobile v1.0.1
+         *
+         * Copyright By Linkage Technology Co.,Ltd. All rights reserved.2014-2015.
+         * All rights reserved.
+         *
+         * This source code is licensed under the LGPLV3-style license found in the
+         * LICENSE file in the root directory of this source tree. 
+         *
+         */
+.icheckbox,
+.iradio {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  background: url(img/icheck.png) no-repeat;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+  font-size: 14px;
+}
+.icheckbox input,
+.iradio input {
+  position: absolute;
+  opacity: 0;
+}
+.icheckradio.iradio {
+  background-position: 0 0;
+  opacity: 0;
+}
+.icheckradio.iradio.checked {
+  background-position: -44px 0;
+  opacity: 1;
+}
+.icheckbox {
+  background-position: 0 0;
+  opacity: 0;
+}
+.icheckbox.indeterminate {
+  background-position: -22px 0;
+}
+.icheckbox.checked {
+  background-position: -44px 0;
+  opacity: 1;
+}
+.icheckbox.unchecked {
+  opacity: 0;
+}
+.icheckbox.disabled {
+  background-position: -66px 0;
+  cursor: default;
+}
+.icheckbox.checked.disabled {
+  background-position: -88px 0;
+}
+.iradio {
+  background-position: -110px 0;
+}
+.iradio.checked {
+  background-position: -132px 0;
+}
+.iradio.disabled {
+  background-position: -154px 0;
+  cursor: default;
+}
+.iradio.checked.disabled {
+  background-position: -176px 0;
+}
+.icheck-helper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  border: 0;
+  opacity: 0;
+}
+.radio-inline .iradio,
+.checkbox-inline .icheckbox {
+  margin-left: -20px;
+}
+.radio label,
+.checkbox label {
+  min-height: 20px;
+  padding-left: 15px;
+  margin-bottom: 0;
+  font-weight: normal;
+  font-size: 14px;
+  cursor: pointer;
+  color: #626262;
+}
