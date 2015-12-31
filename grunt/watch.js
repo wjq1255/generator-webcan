@@ -5,7 +5,7 @@ module.exports = function(grunt) {
           	livereload: true
         },
 		html: {
-			files: ['src/webcan/{,*/}*.html', 'src/webcan/*.html'],
+			files: ['src/webcan/{,*/}*.html', 'src/webcan/*.html', 'src/webcan/tpl/*.html'],
 			tasks: ['restart']
 		},
 		js: {

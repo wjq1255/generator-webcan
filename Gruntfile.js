@@ -20,7 +20,7 @@ module.exports = function(grunt){
     });
 
     grunt.registerTask('restart', function() {
-        grunt.task.run([ 'clean', 'copy' ]);
+        grunt.task.run([ 'clean', 'copy' ,'connect']);
     });
 
     grunt.registerTask('build', function() {
